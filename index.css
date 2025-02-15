@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    background-color: rgb(230, 224, 224);
+
+}
+
+img {
+    width: 22%;
+    max-width: 70px;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 8px;
+}
+
+
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+}
+
+.nav-links a:hover {
+    background-color: white;
+
+}
+
+.background-section {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(4, 8, 28, 0.5), rgba(4, 8, 28, 0.5)), url(your-diy-guide-to-pretty-kitchen.jpg);
+
+}
+
+.background-section h1 {
+    color: rgba(0, 0, 0, 0.801);
+    font-family: sans-serif;
+    padding: 0% 6%;
+    font-size: 2rem;
+    margin: 2px;
+}
+
+.background-section p {
+    padding: 0% 6%;
+    font-family: sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    max-width: 800px;
+    text-align: center;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Image10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+}
+
+.about-section p {
+    text-align: center;
+    color: white;
+    max-width: 500px;
+    font-size: large;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+
+.gallery {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.gallery h1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.images {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 0% 10%;
+    flex-direction: column;
+}
+
+
+.images img {
+    width: 30%;
+    max-width: 30%;
+    border-radius: 10px;
+}
