@@ -48,11 +48,10 @@ nav {
 }
 
 .Background {
-    background: url(pexels-zvolskiy-2062426.jpg);
+    background: url(pexels-zvolskiy-2062426.webp);
     width: 100%;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
     height: 80vh;
     padding: 5%;
     display: flex;
@@ -121,7 +120,7 @@ nav {
 .gallery .parent .div1 {
     grid-column: span 2 / span 2;
     grid-row: span 3 / span 3;
-    background: url(Image1.jpg);
+    background: url(Image1.webp);
     background-position: center;
     background-size: cover;
 }
@@ -130,7 +129,7 @@ nav {
     grid-column: span 3 / span 3;
     grid-row: span 2 / span 2;
     grid-column-start: 3;
-    background: url(image2.jpg);
+    background: url(image2.webp);
     background-position: center;
     background-size: cover;
 }
@@ -140,7 +139,7 @@ nav {
     grid-row: span 2 / span 2;
     grid-column-start: 1;
     grid-row-start: 4;
-    background: url(Image3.jpg);
+    background: url(Image3.webp);
     background-position: center;
     background-size: cover;
 }
@@ -150,7 +149,7 @@ nav {
     grid-row: span 3 / span 3;
     grid-column-start: 3;
     grid-row-start: 3;
-    background: url(Image4.jpg);
+    background: url(Image4.webp);
     background-position: center;
     background-size: cover;
 }
@@ -159,7 +158,7 @@ nav {
     grid-row: span 3 / span 3;
     grid-column-start: 5;
     grid-row-start: 3;
-    background: url(Image5.jpg);
+    background: url(Image5.webp);
     background-position: center;
     background-size: cover;
 }
