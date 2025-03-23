@@ -130,7 +130,7 @@ nav {
     grid-column: span 3 / span 3;
     grid-row: span 2 / span 2;
     grid-column-start: 3;
-    background: url(Image2.jpg);
+    background: url(image2.jpg);
     background-position: center;
     background-size: cover;
 }
