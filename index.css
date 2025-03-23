@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap');
+
+nav {
+    height: 100%;
+    width: 100%;
+    padding: 1% 5%;
+    background-color: rgb(35, 35, 35);
+    position: sticky;
+}
+
+.nav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-container h1 {
+    color: white;
+    font-weight: 600;
+    font-size: 25PX;
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+}
+
+.links a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.849);
+    font-size: 17px;
+    font-weight: 500
+}
+
+.nav-container .bx {
+    font-size: 35px;
+    color: white;
+    display: none;
+}
+
+.Background {
+    background: url(pexels-zvolskiy-2062426.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.Background .text h1 {
+    font-family: "Glass Antiqua", cursive;
+    font-weight: 400;
+    font-size: 30px;
+    color: white;
+}
+
+.Background .text button {
+    margin-top: 30px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    background: transparent;
+    background-color: black;
+    color: white;
+}
+
+ .about .row img {
+    width: 100%;
+    height: 100%;
+    max-width: 520px;
+    max-height: 500px;
+}
+.about .row{
+    display: flex;
+    margin-top: 40px;
+}
+
+.row-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 40px;
+}
+
+.gallery{
+    margin-top: 70px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+.gallery h1{
+    font-size: 50px;
+    font-family: "Glass Antiqua", cursive;
+    font-weight: 400;
+}
+.gallery .parent div{
+    border-radius: 10px;
+}
+.parent {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    width: 100%;
+    height: 100vh;
+}
+    
+.gallery .parent .div1 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    background: url(Image1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery .parent .div2 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    background: url(Image2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery .parent .div3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 4;
+    background: url(Image3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery .parent .div4 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 3;
+    background: url(Image4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery .parent .div6 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 5;
+    grid-row-start: 3;
+    background: url(Image5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+        
+.row-reverse img{
+    
+    width: 100%;
+    height: 100%;
+    max-width: 520px;
+    max-height: 500px;
+}
+.about .row .col{
+    padding: 0px 30px;
+    margin-top: 40px;
+}
+.about .row-reverse .col{
+    padding: 0px 30px;
+    margin-top: 40px;
+}
+.about .row .col p{
+    margin-top: 35px;
+    font-size: 19px;
+    max-width: 350px;
+}
+.about .row-reverse .col p{
+    margin-top: 35px;
+    font-size: 19px;
+    max-width: 350px;
+}
+.about .row .col h1{
+    font-family: "Glass Antiqua", cursive;
+    font-weight: 400; 
+    font-size: 25px;
+}
+.about .row-reverse .col h1{
+    font-family: "Glass Antiqua", cursive;
+    font-weight: 400; 
+    font-size: 25px;
+}
+.about{
+    padding: 0px 5%;
+    margin-top: 50px;
+    max-width: 1150px;
+}
+.about>h1{
+    text-align: center;
+    font-family: "Glass Antiqua", cursive;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+@media only screen and (max-width:700px) {
+    .links {
+        height: 100vh;
+        width: 200px;
+        position: fixed;
+        right: -200px;
+        z-index: 2;
+        top: 0;
+        background-color: rgb(35, 35, 35);
+        text-align: left;
+        flex-direction: column;
+        transition: right 0.5s ease-out;
+        padding: 20px;
+    }
+
+    .nav-container .bx {
+        display: block;
+    }
+   .about .row,.row-reverse{
+        flex-direction: column;
+    }
+   .about .row-reverse .col{
+        padding: 0px;
+    }
+    .about .row .col{
+        padding: 0px;
+    }
+}

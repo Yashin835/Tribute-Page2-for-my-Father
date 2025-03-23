@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Tribute Page</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <h1>ISHTIAQUE</h1>
+            <div class="links">
+                <i class='bx bx-x' onclick="hideMenu()"></i>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+            </div>
+            <i class='bx bx-menu' onclick="showMenu()"></i>
+        </div>
+    </nav>
+    <section id="home" class="Background">
+        <div class="text">
+            <h1>Welcome To This Tribute Page</h1>
+            <button onclick="scrollToSection('about')">About</button>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h1>About My Father</h1>
+        <div class="row-reverse">
+            <img src="Image11.jpg" alt="image">
+            <div class="col">
+                <h1>Early Life</h1>
+                <p> My father is a man of resilience and determination. Through hard work, he built a successful life
+                    and proved that perseverance leads to success. His journey inspires me every day. </p>
+            </div>
+        </div>
+        <div class="row">
+            <img src="Image13.jpg" alt="image">
+            <div class="col">
+                <h1>Career</h1>
+                <p> My father pursued excellence in hotel management, earning multiple degrees and certifications. His
+                    dedication and expertise shaped his remarkable professional journey. </p>
+            </div>
+        </div>
+        <div class="row-reverse">
+            <img src="Image14.jpg" alt="image">
+            <div class="col">
+                <h1>Achievement</h1>
+                <p>From working in a local hotel to excelling in a prestigious five-star hotel, his talent and
+                    perseverance led him to Finland’s biggest hotel, marking a significant milestone in his career. </p>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="gallery">
+        <h1>Gallery</h1>
+        <div class="parent">
+            <div class="div1"></div>
+            <div class="div2"></div>
+            <div class="div3"></div>
+            <div class="div4"></div>
+            <div class="div6"></div>
+        </div>
+    </section>
+    <script src="index.js">
+    </script>
+</body>
+</html>
